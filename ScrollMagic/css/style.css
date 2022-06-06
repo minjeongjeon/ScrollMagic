@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {text-decoration: none; color: #333;}
+
+h3 {
+    font-family: 'S-CoreDream-6Bold';
+    font-size: 25px;
+    color: #333; 
+}
+
+/* COMMON */
+.left {float: left;}
+
+.right {float: right}
+
+.clear::after { 
+    content: '';
+    display: block; 
+    clear: both;
+}
+
+.inner {
+    width: 1140px;
+    margin: 0 auto;
+}
+/* BACK TO POSITION */
+.back-to-position.delay-1 {
+    opacity: 0;
+    transition: 1s;
+}
+.back-to-position.delay-2 {
+    opacity: 0;
+    transition: 1s;
+}
+.back-to-position.delay-3 {
+    opacity: 0;
+    transition: 1s;
+}
+.back-to-position.to-right {
+    transform: translateX(-150px);
+}
+.back-to-position.to-left {
+    transform: translateX(150px);
+}
+.show .back-to-position {
+    opacity: 1;
+    transform: translateX(0);
+}
+.show .back-to-position.delay-0 {
+    transition-delay: 0s;
+}
+.show .back-to-position.delay-1 {
+    transition-delay: .3s;
+}
+.show .back-to-position.delay-2 {
+    transition-delay: .6s;
+}
+.show .back-to-position.delay-3 {
+    transition-delay: .9s;
+}
+
+
+
+
+
+
+
+.mysection {
+    width: 100%;
+    height: 380px;
+    /* background-color: #C5D4DB; */
+    background-color: #D9E6EF;
+}
+.mysection .inner {
+    padding: 40px 0;
+    position: relative;
+}
+.mysection .tlt-box h1 {
+    font-size: 58px;
+    line-height: 87px;
+    color: #3f7c88;
+    margin-bottom: 8px;
+}
+.mysection .tlt-box p {
+    color: #555;
+    line-height: 1.8;
+}
+.mysection .btn-wrap {
+    position: absolute;
+    bottom: -29px;
+    left: 0;
+    width: 140px;
+    height: 45px;
+}
+.mysection .btn {
+    display: block;
+    border: 2px solid #3f7c88;
+    color: #3f7c88;
+    font-size: 15px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color .5s, color .5s;
+}
+.mysection .btn:hover {
+    background-color: #3f7c88;
+    color: #fff;
+}
+.mysection .img-box {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 450px;
+}
